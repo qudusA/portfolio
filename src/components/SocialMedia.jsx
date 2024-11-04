@@ -5,7 +5,7 @@ const Contact = styled.div`
   width: 20%;
   /* border: 1px solid green; */
   display: flex;
-  gap: 15px;
+  gap: 10px;
   justify-content: end;
   cursor: pointer;
 `;

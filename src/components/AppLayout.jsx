@@ -1,5 +1,4 @@
 import Header from "./header";
-// import GlobalStyle from "../styles/GlobalStyle";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import DarkModeToggle from "./DarkModeToggle";
@@ -18,7 +17,6 @@ const P = styled.p`
 export default function AppLayout() {
   return (
     <Div>
-      {/* <GlobalStyle /> */}
       <P>
         <DarkModeToggle />
       </P>

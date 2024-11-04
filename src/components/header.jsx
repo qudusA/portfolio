@@ -2,32 +2,34 @@ import styled from "styled-components";
 import SocialMedia from "./SocialMedia";
 import Logo from "./Logo";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Nav = styled.nav`
-  /* border: 1px solid black; */
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  /* gap: 100px; */
+  height: 60px;
+  justify-content: center;
+  gap: 100px;
   font-size: 20px;
-  padding: 10px;
   align-items: center;
-  margin-bottom: 100px;
+  /* border: 1px solid black; */
+  /* margin-bottom: 100px; */
 `;
 
 const Div = styled.div`
-  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
   gap: 20px;
-  color: var(--color-gray-20);
+  color: var(--color-gray-100);
+  /* width: 60%; */
+  /* border: 1px solid red; */
 `;
 
 const P = styled.p`
   text-transform: capitalize;
   cursor: pointer;
+  white-space: nowrap;
 `;
 
 // const Contact = styled.div`
@@ -43,15 +45,25 @@ export default function Header() {
     <Nav>
       <Logo />
       <Div>
-        <P>home</P>
-        <P>about</P>
-        <P>tech stack</P>
-        <P>project</P>
-        <P>contact</P>
+        <P>
+          <NavLink to={"/"}>Home</NavLink>
+        </P>
+        <P>
+          <NavLink to={"/about"}>about</NavLink>
+        </P>
+        <P>
+          <NavLink to={"/tech"}>tech stack</NavLink>
+        </P>
+        <P>
+          <NavLink to={"/project"}>project</NavLink>
+        </P>
+        <P>
+          <NavLink to={"/contact"}>contact</NavLink>
+        </P>
         <SocialMedia>
-          <FaGithub style={{ color: "var(--color-gray-20)" }} />
-          <FaTwitter style={{ color: "var(--color-gray-20)" }} />
-          <FaLinkedinIn style={{ color: "var(--color-gray-20)" }} />
+          <FaGithub />
+          <FaTwitter />
+          <FaLinkedinIn />
         </SocialMedia>
       </Div>
     </Nav>
