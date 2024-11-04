@@ -40,7 +40,7 @@ const globalStyle = createGlobalStyle`
   --shadow-delete-lg: 1px  1px 3.2rem rgba(0, 0, 0, 0.12);
   
 
-    --image-grayscale: 0;
+  --image-grayscale: 0;
   --image-opacity: 100%;
   }
   
@@ -136,7 +136,7 @@ body {
     max-width: 80%;
     /* border: 1px solid green; */
     margin: 0 auto;
-  padding: 30px;
+  padding-top: 30px;
 
 }
 

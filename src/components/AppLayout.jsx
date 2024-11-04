@@ -8,10 +8,12 @@ const Div = styled.div`
 `;
 
 const P = styled.p`
-  position: sticky;
-  right: 0;
+  position: fixed;
+  right: 10px;
   top: 150px;
   cursor: pointer;
+  border: 2px solid var(--color-grey-800);
+  border-radius: 3px;
 `;
 
 export default function AppLayout() {

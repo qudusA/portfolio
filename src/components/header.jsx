@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import SocialMedia from "./SocialMedia";
 import Logo from "./Logo";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaTimes } from "react-icons/fa";
+
+import { IoGrid } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Nav = styled.nav`
   display: flex;
@@ -13,7 +16,7 @@ const Nav = styled.nav`
   font-size: 20px;
   align-items: center;
   /* border: 1px solid black; */
-  /* margin-bottom: 100px; */
+  margin-bottom: 100px;
 `;
 
 const Div = styled.div`
@@ -22,8 +25,20 @@ const Div = styled.div`
   align-items: center;
   gap: 20px;
   color: var(--color-gray-100);
+
+  @media (max-width: 983px) {
+    display: none;
+  }
   /* width: 60%; */
   /* border: 1px solid red; */
+`;
+
+const Grid = styled.div`
+  display: none;
+  cursor: pointer;
+  @media (max-width: 983px) {
+    display: block;
+  }
 `;
 
 const P = styled.p`
@@ -41,6 +56,8 @@ const P = styled.p`
 // `;
 
 export default function Header() {
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
     <Nav>
       <Logo />
@@ -66,6 +83,9 @@ export default function Header() {
           <FaLinkedinIn />
         </SocialMedia>
       </Div>
+      <Grid onClick={() => setIsClicked((clicked) => !clicked)}>
+        {isClicked ? <FaTimes /> : <IoGrid />}
+      </Grid>
     </Nav>
   );
 }

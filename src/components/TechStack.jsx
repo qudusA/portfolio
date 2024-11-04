@@ -15,6 +15,9 @@ const Tech = styled.p`
   display: flex;
   justify-content: center;
   gap: 40px;
+
+  flex: 1;
+  flex-wrap: wrap;
 `;
 
 const H4 = styled.h4`

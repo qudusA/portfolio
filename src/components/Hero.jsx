@@ -9,10 +9,14 @@ const Div = styled.div`
   font-size: 20px;
   padding: 10px;
   align-items: center;
+  margin-bottom: 100px;
   /* flex-wrap: wrap; */
   /* flex: 1; */
-  /* margin: 100px 0; */
   /* border: 1px solid red; */
+
+  @media (max-width: 983px) {
+    flex-direction: column;
+  }
 `;
 const P = styled.p`
   max-width: 50%;
@@ -29,12 +33,12 @@ export default function Hero() {
   return (
     <Div>
       <P>
-        Hi👋, <br /> my name is FATIMAH DAMILOLA OYESANMI <br />A passionate
+        Hi👋, <br /> my name is FATIMAH DAMILOLA OYESANMI, <br />A passionate
         Software Developer, I&apos;m a vibrant and articulate problem-solver
         with experience in writing well-designed, tested, and efficient code for
         the development of frontend applications utilizing JavaScript and
         TypeScript, I thrive in solving complex problems and pushing the
-        boundaries of what&apos;s possible on the web
+        boundaries of what&apos;s possible on the web.
       </P>
       <ImageContainer>
         <Image src="Headshot.jpg" alt="fatimah image" width={"300px"} />

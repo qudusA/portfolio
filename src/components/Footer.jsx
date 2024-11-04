@@ -7,6 +7,9 @@ const Footer1 = styled.footer`
   padding: 20px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 983px) {
+  }
 `;
 
 export default function Footer() {
