@@ -16,6 +16,7 @@ const Div = styled.div`
 
   @media (max-width: 983px) {
     flex-direction: column;
+    margin-bottom: 50px;
   }
 `;
 const P = styled.p`

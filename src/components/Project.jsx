@@ -89,7 +89,7 @@ export default function Project() {
     <Container>
       <div>
         <p>Projects</p>
-        <Span>i have don this</Span>
+        <Span>Things i have done so far</Span>
       </div>
       <List>
         {Arr.map((card) => (

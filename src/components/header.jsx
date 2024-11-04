@@ -17,6 +17,10 @@ const Nav = styled.nav`
   align-items: center;
   /* border: 1px solid black; */
   margin-bottom: 100px;
+
+  @media (max-width: 983px) {
+    margin-bottom: 30px;
+  }
 `;
 
 const Div = styled.div`
