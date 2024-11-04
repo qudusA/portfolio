@@ -20,6 +20,10 @@ const Div = styled.div`
 `;
 const P = styled.p`
   max-width: 50%;
+
+  @media (max-width: 983px) {
+    max-width: 100vw;
+  }
 `;
 
 const ImageContainer = styled.div``;
