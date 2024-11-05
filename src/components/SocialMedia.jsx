@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 
 const Contact = styled.div`
   width: 20%;
-  /* border: 1px solid green; */
   display: flex;
   gap: 10px;
   justify-content: end;
   cursor: pointer;
+  /* border: 1px solid green; */
 `;
 
 export default function SocialMedia({ children }) {

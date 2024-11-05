@@ -9,6 +9,10 @@ const Li = styled.li`
   border-radius: 20px;
   /* background-color: var(--); */
   /* border: 1px solid red; */
+
+  @media (max-width: 983px) {
+    width: 300px;
+  }
 `;
 
 export default function ProjectCard({ children, key }) {

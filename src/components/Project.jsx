@@ -20,7 +20,23 @@ const List = styled.ul`
 `;
 
 const Span = styled.span`
+  padding: 0 15px;
+  border-radius: 10px;
   display: inline-block;
+  background-color: var(--color-grey-900);
+  color: var(--color-grey-100);
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: var(--color-grey-600);
+  }
+`;
+
+const H3 = styled.h3`
+  text-transform: capitalize;
+  font-weight: 900;
+  letter-spacing: 1.5;
+  margin-bottom: 15px;
 `;
 
 const Div = styled.div`
@@ -49,6 +65,10 @@ const ATag = styled.a`
   gap: 10px;
   /* justify-content: center; */
   align-items: center;
+`;
+
+const Img = styled.img`
+  width: 100%;
 `;
 
 const Arr = [
@@ -88,13 +108,13 @@ export default function Project() {
   return (
     <Container>
       <div>
-        <p>Projects</p>
-        <Span>Things i have done so far</Span>
+        <Span>My Projects</Span>
+        <H3>check out my latest work</H3>
       </div>
       <List>
         {Arr.map((card) => (
           <ProjectCard key={card.id}>
-            <img src={card.img} alt="proj 1" />
+            <Img src={card.img} alt="proj 1" />
             <Div>
               <Title>{card.title}</Title>
               <DesCont>

@@ -8,6 +8,7 @@ const Div = styled.div`
   flex-direction: column;
   gap: 50px;
   text-align: center;
+  margin-bottom: 100px;
   /* min-height: 100vh; */
   /* border: 1px solid red; */
 `;
@@ -21,15 +22,67 @@ const Tech = styled.p`
 `;
 
 const H4 = styled.h4`
+  text-transform: uppercase;
   /* margin-bottom: 30px; */
 `;
+
+const Name = styled.span`
+  padding: 0 5px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: var(--color-grey-900);
+  color: var(--color-grey-100);
+
+  &:hover {
+    background-color: var(--color-grey-600);
+  }
+`;
+
+const StackDiv = styled.div`
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+`;
+
+const stackList = [
+  "JavaScript",
+  "CSS",
+  "Sequelize",
+  "HTML",
+  "Mongoose",
+  "React",
+  "Next",
+  "SpringBoot",
+  "Nest",
+  "SQL",
+  "NoSQL",
+  "Java",
+  "Docker",
+  "Postges",
+  "Git",
+  "Nx Monorepo",
+  "Mocha",
+  "TypeScript",
+  "Redux",
+  "Pug",
+  "Handlebars",
+  "Ejs",
+  "MongoDb",
+  "BullMq",
+  "Styled Components",
+  "Redis",
+  "Tailwind",
+  "Aws",
+];
 
 export default function TechStack() {
   return (
     <Div>
       <div>
-        <p>My tech stack</p>
-        <H4>my technologies</H4>
+        {/* <p>My tech stack</p> */}
+        <H4>skills</H4>
       </div>
       <Tech>
         <FaHtml5 style={{ color: "var(--color-pink-200)" }} size={"80px"} />
@@ -44,6 +97,11 @@ export default function TechStack() {
           size={"80px"}
         />
       </Tech>
+      <StackDiv>
+        {stackList.map((stack, i) => (
+          <Name key={i}>{stack}</Name>
+        ))}
+      </StackDiv>
     </Div>
   );
 }

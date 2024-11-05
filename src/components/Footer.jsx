@@ -6,7 +6,8 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 const Footer1 = styled.footer`
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
 
   @media (max-width: 983px) {
   }

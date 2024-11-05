@@ -16,7 +16,7 @@ const Nav = styled.nav`
   font-size: 20px;
   align-items: center;
   /* border: 1px solid black; */
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   @media (max-width: 983px) {
     margin-bottom: 30px;

@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const Div = styled.div`
   display: flex;
   width: 100%;
-  min-height: calc(100vh - 60px);
+  /* min-height: calc(100vh - 60px); */
   justify-content: center;
   gap: 50px;
   font-size: 20px;
   padding: 10px;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   /* flex-wrap: wrap; */
   /* flex: 1; */
   /* border: 1px solid red; */
@@ -19,19 +19,44 @@ const Div = styled.div`
     margin-bottom: 50px;
   }
 `;
+
+const slideFromLeft = keyframes`
+  from {
+    transform: translateX(-900px);
+  }
+ 
+ to {
+  transform: translateX(0);
+ }
+`;
+
 const P = styled.p`
   max-width: 50%;
 
   @media (max-width: 983px) {
     max-width: 100vw;
   }
+
+  animation: ${slideFromLeft} 2s linear 1s;
 `;
 
 const ImageContainer = styled.div``;
 
+const slideFromRight = keyframes`
+  from {
+    transform: translateX(900px);
+  }
+ 
+ to {
+  transform: translateX(0);
+ }
+`;
+
 const Image = styled.img`
   border-radius: 5px;
   box-shadow: var(--shadow-lg);
+
+  animation: ${slideFromRight} 2s ease-in 1s;
 `;
 
 export default function Hero() {
