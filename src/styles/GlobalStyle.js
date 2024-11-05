@@ -140,7 +140,7 @@ body {
     max-width: 80%;
     /* border: 1px solid green; */
     margin: 0 auto;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 
 }
 

@@ -37,14 +37,22 @@ const Name = styled.span`
   &:hover {
     background-color: var(--color-grey-600);
   }
+
+  @media (max-width: 983px) {
+    font-size: 10px;
+  }
 `;
 
 const StackDiv = styled.div`
   display: flex;
   gap: 10px;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   padding: 20px;
+
+  @media (max-width: 983px) {
+    gap: 4px;
+  }
 `;
 
 const stackList = [

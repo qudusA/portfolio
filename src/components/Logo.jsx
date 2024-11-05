@@ -9,7 +9,7 @@ const ProfLogo = styled.h1`
   white-space: nowrap;
 
   @media (max-width: 983px) {
-    font-size: 10px;
+    /* font-size: 10px; */
   }
 `;
 
