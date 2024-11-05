@@ -8,8 +8,11 @@ const Footer1 = styled.footer`
   display: flex;
   justify-content: center;
   gap: 100px;
+  align-items: center;
 
   @media (max-width: 983px) {
+    gap: 20px;
+    /* transform: translateY(-50px); */
   }
 `;
 

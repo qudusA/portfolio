@@ -11,7 +11,7 @@ const Li = styled.li`
   /* border: 1px solid red; */
 
   @media (max-width: 983px) {
-    width: 300px;
+    width: 90%;
   }
 `;
 

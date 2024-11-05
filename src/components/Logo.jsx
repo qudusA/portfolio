@@ -7,6 +7,10 @@ const ProfLogo = styled.h1`
   gap: 4px;
   font-size: 20px;
   white-space: nowrap;
+
+  @media (max-width: 983px) {
+    font-size: 10px;
+  }
 `;
 
 export default function Logo() {

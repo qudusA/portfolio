@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import SocialMedia from "./SocialMedia";
 import Logo from "./Logo";
-import { FaGithub, FaLinkedinIn, FaTwitter, FaTimes } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import NavItems from "./NavItems";
 
-import { IoGrid } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Nav = styled.nav`
   display: flex;
@@ -37,20 +36,6 @@ const Div = styled.div`
   /* border: 1px solid red; */
 `;
 
-const Grid = styled.div`
-  display: none;
-  cursor: pointer;
-  @media (max-width: 983px) {
-    display: block;
-  }
-`;
-
-const P = styled.p`
-  text-transform: capitalize;
-  cursor: pointer;
-  white-space: nowrap;
-`;
-
 // const Contact = styled.div`
 //   width: 20%;
 //   /* border: 1px solid green; */
@@ -60,36 +45,23 @@ const P = styled.p`
 // `;
 
 export default function Header() {
-  const [isClicked, setIsClicked] = useState(false);
+  // const [isClicked, setIsClicked] = useState(false);
 
   return (
     <Nav>
       <Logo />
       <Div>
-        <P>
-          <NavLink to={"/"}>Home</NavLink>
-        </P>
-        <P>
-          <NavLink to={"/about"}>about</NavLink>
-        </P>
-        <P>
-          <NavLink to={"/tech"}>tech stack</NavLink>
-        </P>
-        <P>
-          <NavLink to={"/project"}>project</NavLink>
-        </P>
-        <P>
-          <NavLink to={"/contact"}>contact</NavLink>
-        </P>
+        <NavItems />
         <SocialMedia>
           <FaGithub />
           <FaTwitter />
           <FaLinkedinIn />
         </SocialMedia>
       </Div>
-      <Grid onClick={() => setIsClicked((clicked) => !clicked)}>
+
+      {/* <Grid onClick={() => setIsClicked((clicked) => !clicked)}>
         {isClicked ? <FaTimes /> : <IoGrid />}
-      </Grid>
+      </Grid> */}
     </Nav>
   );
 }

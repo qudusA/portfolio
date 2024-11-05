@@ -32,6 +32,7 @@ const Name = styled.span`
   display: inline-block;
   background-color: var(--color-grey-900);
   color: var(--color-grey-100);
+  white-space: nowrap;
 
   &:hover {
     background-color: var(--color-grey-600);
