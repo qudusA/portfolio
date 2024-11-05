@@ -10,6 +10,9 @@ const Div = styled.div`
   padding: 10px;
   align-items: center;
   margin-bottom: 30px;
+  visibility: hidden;
+  /* visibility: visible; */
+
   /* flex-wrap: wrap; */
   /* flex: 1; */
   /* border: 1px solid red; */
@@ -24,13 +27,14 @@ const Div = styled.div`
 const slideFromLeft = keyframes`
   from {
     transform: translateX(-900px);
-  opacity: 0;
-
+    opacity: 0;
   }
  
  to {
   transform: translateX(0);
   opacity: 1;
+  visibility: visible;
+
  }
 `;
 
@@ -41,7 +45,7 @@ const P = styled.p`
     max-width: 100vw;
   }
 
-  animation: ${slideFromLeft} 2s linear 1s;
+  animation: ${slideFromLeft} 2s linear 1s forwards;
 `;
 
 const ImageContainer = styled.div``;
@@ -49,14 +53,13 @@ const ImageContainer = styled.div``;
 const slideFromRight = keyframes`
   from {
     transform: translateX(900px);
-  opacity: 0;
-
+    opacity: 0;
   }
  
  to {
   transform: translateX(0);
   opacity: 1;
-
+  visibility: visible;
  }
 `;
 
@@ -64,7 +67,7 @@ const Image = styled.img`
   border-radius: 5px;
   box-shadow: var(--shadow-lg);
 
-  animation: ${slideFromRight} 2s ease-in 1s;
+  animation: ${slideFromRight} 2s ease-in 1s forwards;
 `;
 
 export default function Hero() {
