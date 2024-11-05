@@ -16,7 +16,6 @@ const Tech = styled.p`
   display: flex;
   justify-content: center;
   gap: 40px;
-
   flex: 1;
   flex-wrap: wrap;
 `;
@@ -39,7 +38,7 @@ const Name = styled.span`
   }
 
   @media (max-width: 983px) {
-    font-size: 10px;
+    font-size: 15px;
   }
 `;
 
@@ -94,17 +93,11 @@ export default function TechStack() {
         <H4>skills</H4>
       </div>
       <Tech>
-        <FaHtml5 style={{ color: "var(--color-pink-200)" }} size={"80px"} />
-        <FaCss3Alt style={{ color: "var(--color-blue-200)" }} size={"80px"} />
-        <IoLogoJavascript
-          style={{ color: "var(--color-yellow-200)" }}
-          size={"80px"}
-        />
-        <FaReact style={{ color: "var(--color-blue-200)" }} size={"80px"} />
-        <SiStyledcomponents
-          style={{ color: "var(--color-yellow-200)" }}
-          size={"80px"}
-        />
+        <FaHtml5 size={"80px"} />
+        <FaCss3Alt size={"80px"} />
+        <IoLogoJavascript size={"80px"} />
+        <FaReact size={"80px"} />
+        <SiStyledcomponents size={"80px"} />
       </Tech>
       <StackDiv>
         {stackList.map((stack, i) => (

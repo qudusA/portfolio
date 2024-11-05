@@ -24,10 +24,13 @@ const Div = styled.div`
 const slideFromLeft = keyframes`
   from {
     transform: translateX(-900px);
+  opacity: 0;
+
   }
  
  to {
   transform: translateX(0);
+  opacity: 1;
  }
 `;
 
@@ -46,10 +49,14 @@ const ImageContainer = styled.div``;
 const slideFromRight = keyframes`
   from {
     transform: translateX(900px);
+  opacity: 0;
+
   }
  
  to {
   transform: translateX(0);
+  opacity: 1;
+
  }
 `;
 

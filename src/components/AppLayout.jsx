@@ -34,7 +34,7 @@ const Palet = styled.p`
   display: none;
   position: fixed;
   right: 50%;
-  bottom: 30px;
+  bottom: 10px;
   min-width: 200px;
   padding: 10px;
 
