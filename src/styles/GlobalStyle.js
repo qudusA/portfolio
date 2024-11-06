@@ -125,9 +125,9 @@ body {
   background-color: var(--color-grey-0);
   /* width: 100vw; */
   /* border: 1px solid red; */
-  /* &::-webkit-scrollbar{
+   &::-webkit-scrollbar{
     display: none;
-  } */  
+  } 
 
   transition: color 0.3s, background-color 0.3s;
   min-height: 100vh;
@@ -137,7 +137,7 @@ body {
 }
 
 #root{
-    max-width: 80%;
+    max-width: 70%;
     /* border: 1px solid green; */
     margin: 0 auto;
   /* padding-top: 30px; */

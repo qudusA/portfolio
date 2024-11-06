@@ -45,7 +45,7 @@ const P = styled.p`
     max-width: 100vw;
   }
 
-  animation: ${slideFromLeft} 2s linear 1s forwards;
+  animation: ${slideFromLeft} 0.8s linear 0.1s forwards;
 `;
 
 const ImageContainer = styled.div``;
@@ -67,7 +67,7 @@ const Image = styled.img`
   border-radius: 5px;
   box-shadow: var(--shadow-lg);
 
-  animation: ${slideFromRight} 2s ease-in 1s forwards;
+  animation: ${slideFromRight} 0.8s ease-in 0.1s forwards;
 `;
 
 export default function Hero() {

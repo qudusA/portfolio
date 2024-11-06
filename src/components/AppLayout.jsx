@@ -37,6 +37,7 @@ const Palet = styled.p`
   bottom: 10px;
   min-width: 200px;
   padding: 10px;
+  z-index: 100;
 
   color: var(--color-grey-900);
   background-color: var(--palet);

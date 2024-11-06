@@ -2,13 +2,14 @@ import styled from "styled-components";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiStyledcomponents } from "react-icons/si";
+import H4 from "../UI/H4";
 
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   /* min-height: 100vh; */
   /* border: 1px solid red; */
 `;
@@ -20,10 +21,10 @@ const Tech = styled.p`
   flex-wrap: wrap;
 `;
 
-const H4 = styled.h4`
-  text-transform: uppercase;
-  /* margin-bottom: 30px; */
-`;
+// const H4 = styled.h4`
+//   text-transform: uppercase;
+//   /* margin-bottom: 30px; */
+// `;
 
 const Name = styled.span`
   padding: 0 5px;
