@@ -45,10 +45,11 @@ const Name = styled.span`
 
 const StackDiv = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 8px;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding: 20px;
+  font-size: 1.2rem;
 
   @media (max-width: 983px) {
     gap: 4px;
@@ -79,6 +80,7 @@ const stackList = [
   "Handlebars",
   "Ejs",
   "MongoDb",
+  "Prisma",
   "BullMq",
   "Styled Components",
   "Redis",

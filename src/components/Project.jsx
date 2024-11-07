@@ -16,7 +16,7 @@ const List = styled.ul`
   gap: 40px;
   flex-wrap: wrap;
   flex: 1;
-  font-size: 18px;
+  /* font-size: 18px; */
 `;
 
 const Span = styled.span`
@@ -26,7 +26,7 @@ const Span = styled.span`
   background-color: var(--color-grey-900);
   color: var(--color-grey-100);
   margin-bottom: 10px;
-
+  font-size: 1.5rem;
   &:hover {
     background-color: var(--color-grey-600);
   }
@@ -36,13 +36,19 @@ const H3 = styled.h3`
   text-transform: capitalize;
   font-weight: 900;
   letter-spacing: 1.5;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
 `;
 
 const Div = styled.div`
   padding: 20px;
   display: grid;
   gap: 20px;
+  text-align: justify;
+
+  @media (max-width: 983px) {
+    gap: 10px;
+    padding: 5 10px;
+  }
 `;
 
 const DesCont = styled.div`
@@ -53,6 +59,7 @@ const DesCont = styled.div`
 
 const Title = styled.p`
   font-weight: 700;
+  text-align: center;
 `;
 
 const LinkContainer = styled.p`
