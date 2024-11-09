@@ -86,6 +86,7 @@ const stackList = [
   "Redis",
   "Tailwind",
   "Aws",
+  "typeOrm",
 ];
 
 export default function TechStack() {
