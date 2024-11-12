@@ -70,6 +70,13 @@ const educationArr = [
     degree: "HND",
   },
   {
+    school: "Bells university of Technology",
+    department: "Hospitality and Hotel management",
+    startDate: "Feb 2017",
+    endDate: "Dec 2018",
+    degree: "HND",
+  },
+  {
     school: "Yaba College of Technology",
     department: "Hospitality and Hotel management",
     startDate: "Feb 2017",
